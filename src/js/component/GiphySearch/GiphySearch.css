@@ -1,0 +1,79 @@
+/* Estilos base */
+.giphy-search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .search-button {
+    background-color: #f71010;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #ff3333;
+  }
+  
+  .gif-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gif-item {
+    background-color: #707e7e;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gif-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .pagination-container {
+    display: flex;
+    flex-wrap: wrap; /* Hace que los botones se envuelvan en lugar de desbordar */
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px; /* Agrega un margen inferior para separar la paginación del contenido */
+  }
+  
+  .page-button {
+    background-color: rgb(0, 60, 255);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .page-button.active {
+    background-color: #0056b3;
+  }
+  

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./buscador.css";
+import "./buscador.css"; // Importa tu archivo de estilos CSS aquí
 
 const Buscador = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -7,6 +7,7 @@ const Buscador = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [itemsPerPage] = useState(12); // Número de imágenes por página
+  const [maxPagesToShow] = useState(10); // Número máximo de páginas mostradas
   const apiKey = "39618174-e395b4a97be03a6809542973d"; // Tu clave de API de Pixabay
 
   useEffect(() => {
@@ -56,14 +57,73 @@ const Buscador = () => {
     setCurrentPage(newPage);
   };
 
+  const renderPagination = () => {
+    const pages = [];
+
+    // Calcular los límites inferior y superior para las páginas mostradas
+    let startPage = Math.max(1, currentPage - Math.floor(maxPagesToShow / 2));
+    let endPage = startPage + maxPagesToShow - 1;
+
+    if (endPage > totalPages) {
+      endPage = totalPages;
+      startPage = Math.max(1, endPage - maxPagesToShow + 1);
+    }
+
+    for (let page = startPage; page <= endPage; page++) {
+      pages.push(
+        <li
+          className={`page-item ${
+            currentPage === page ? "active" : ""
+          }`}
+          key={page}
+        >
+          <button
+            className="page-link page-button"
+            onClick={() => handlePageChange(page)}
+          >
+            {page}
+          </button>
+        </li>
+      );
+    }
+
+    return (
+      <nav>
+        <ul className="pagination">
+          <li className={`page-item ${currentPage === 1 ? "disabled" : ""}`}>
+            <button
+              className="page-link page-button"
+              onClick={() => handlePageChange(currentPage - 1)}
+            >
+              {"←"}{/* Flecha izquierda */}
+            </button>
+          </li>
+          {pages}
+          <li
+            className={`page-item ${
+              currentPage === totalPages ? "disabled" : ""
+            }`}
+          >
+            <button
+              className="page-link page-button"
+              onClick={() => handlePageChange(currentPage + 1)}
+            >
+              {"→"}{/* Flecha derecha */}
+            </button>
+          </li>
+        </ul>
+      </nav>
+    );
+  };
+
   return (
-    <div>
+    <div className="giphy-search-container">
       <div className="row">
         <div className="col-md-8">
           <input
             type="text"
-            className="form-control"
-            placeholder="Look for what you want..."
+            className="search-input"
+            placeholder="Search Photos..."
             aria-label="Buscar"
             aria-describedby="basic-addon2"
             value={searchTerm}
@@ -71,68 +131,39 @@ const Buscador = () => {
           />
         </div>
         <div className="col-md-4">
-        <button
-  className="btn btn-search"
-  type="button"
-  onClick={handleSearch}
->
-  Search
-</button>
-
+          <button className="btn-search" type="button" onClick={handleSearch}>
+            Search
+          </button>
         </div>
       </div>
-      {/* Mostrar las imágenes obtenidas solo si hay imágenes en el estado */}
+
       {images.length > 0 && (
-        <div>
-          <div className="row mt-3">
-            {images.map((image) => (
-              <div className="col-md-4 mb-3 image-container" key={image.id}>
-                <img
-                  src={image.webformatURL}
-                  alt={image.tags}
-                  className="img-fluid"
-                />
-                <div className="image-details">
-                  <p>Likes: {image.likes}</p>
-                  <p>Views: {image.views}</p>
-                  <button
-                    className="btnsearch"
-                    onClick={() => openImageInNewTab(image.largeImageURL)}
-                  >
-                    View and download 
-                  </button>
-                </div>
+        <div className="row mt-3 result-container">
+          {images.map((image) => (
+            <div className="col-md-4 mb-3 image-container" key={image.id}>
+              <img
+                src={image.webformatURL}
+                alt={image.tags}
+                className="img-fluid result-image"
+              />
+              <div className="image-details">
+                <p>Likes: {image.likes}</p>
+                <p>Views: {image.views}</p>
+                <button
+                  className="btnsearch"
+                  onClick={() => openImageInNewTab(image.largeImageURL)}
+                >
+                  View and download
+                </button>
               </div>
-            ))}
-          </div>
-          {/* Paginación */}
-          <div className="pagination-container">
-         
-            
-              <nav>
-                <ul className="pagination">
-                  {Array.from({ length: totalPages }, (_, index) => (
-                    <li
-                      className={`page-item ${
-                        currentPage === index + 1 ? "active" : ""
-                      }`}
-                      key={index + 1}
-                    >
-                      <button
-                        className="page-link"
-                        onClick={() => handlePageChange(index + 1)}
-                      >
-                        {index + 1}
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-              
             </div>
-          </div>
-        
+          ))}
+        </div>
       )}
+
+      <div className="row mt-3 pagination-container">
+        {renderPagination()}
+      </div>
     </div>
   );
 };
