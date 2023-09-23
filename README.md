@@ -21,8 +21,6 @@ Esta es una aplicación web que te permite buscar y descargar GIFs y fotos de Gi
 - API de Giphy
 - API de Pixabay
 
-
-
 ## Uso 📺
 
 1. Ingresa una palabra clave en el campo de búsqueda.
@@ -39,10 +37,3 @@ Si deseas contribuir a este proyecto, sigue estos pasos:
 3. Realiza tus cambios y haz commits: `git commit -m 'Añadida una nueva característica'`.
 4. Empuja tus cambios a la rama: `git push origin feature/nombre-de-la-funcion`.
 5. Crea un pull request en el repositorio original.
-
-
-
-
-Hecho con ❤️ por Antonio 
-
-
