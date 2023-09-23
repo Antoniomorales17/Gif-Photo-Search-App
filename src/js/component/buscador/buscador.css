@@ -1,0 +1,122 @@
+/* Estilos base */
+.btn-search {
+    background-color: #007bff; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image-container {
+    background-color: #f0f0f0; /* Gris claro */
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-details {
+    margin-top: 10px;
+}
+
+/* Estilos para los detalles de la imagen (Likes y Views) */
+.image-details p {
+    color: #000; /* Texto negro para Likes y Views */
+}
+
+.pagination {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Hace que los botones se envuelvan en lugar de desbordar */
+    margin: 0 -5px; /* Espacio negativo entre los elementos de la paginación */
+}
+
+/* Estilos para los botones de paginación */
+.page-link {
+    background-color: #007bff; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    margin: 5px; /* Espacio entre los botones de paginación */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-link:hover {
+    background-color: #0056b3; /* Azul más oscuro en el hover */
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-link {
+    background-color: #007bff; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-link:hover {
+    background-color: #0056b3; /* Azul más oscuro en el hover */
+}
+
+.btnsearch {
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.rem;
+    color: #0f0f0f;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btnsearch:hover {
+    background-color: #ffcc29; /* Amarillo más claro en el hover */
+}
+
+/* Media Queries para pantallas más pequeñas (ajusta según tus necesidades) */
+@media (max-width: 768px) {
+    .btn-search {
+        width: 100%; /* Hacer que el botón ocupe todo el ancho disponible */
+        padding: 10px; /* Aumentar el espacio interno del botón */
+        font-size: 1.2rem; /* Aumentar el tamaño del texto */
+    }
+
+    .image-container {
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .image-details {
+        margin-top: 5px;
+    }
+
+    .pagination-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .page-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}

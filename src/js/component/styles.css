@@ -1,0 +1,28 @@
+/* Establece el fondo negro para la aplicación */
+body {
+    background-color: black;
+    color: white; /* Cambia el color del texto a blanco para mayor contraste */
+  }
+  
+  /* Personaliza los estilos para la sección de la página principal */
+  .home {
+    padding: 20px;
+  }
+  
+  /* Personaliza los estilos para la caja de búsqueda */
+  .jumbotron {
+    background-color: rgba(54, 54, 54, 0.7); /* Fondo negro con opacidad */
+    padding: 20px;
+    border-radius: 10px; /* Agrega esquinas redondeadas */
+  }
+  
+  /* Cambia el color del texto dentro de la caja de búsqueda */
+  .jumbotron p {
+    color: white;
+  }
+  
+ 
+.custom-text {
+    font-size:2rem;
+  }
+  
