@@ -2,9 +2,9 @@
 
 ![Gif & Photo Search App Screenshot](https://i.imgur.com/ICiuqjk.png)
 
-Esta es una aplicación web que te permite buscar y descargar GIFs y fotos de Giphy y Pixabay. Con esta aplicación, puedes explorar una amplia variedad de contenido visual, guardar tus GIFs y fotos favoritos, y compartirlos en tus redes sociales. ¡Disfruta de la diversión de la búsqueda y la descarga de contenido visual!
+Esta es una aplicación web que te permite buscar y descargar GIFs y fotos de Giphy y Pixabay. Con esta aplicación, puedes explorar una amplia variedad de contenido visual, guardar tus GIFs y fotos favoritos, y compartirlos en tus redes sociales. ¡Disfruta de la diversión de la búsqueda y la descarga de contenido visual! 😺
 
-## Características
+## Características 🎈
 
 - Búsqueda de GIFs y fotos: Utiliza palabras clave para buscar GIFs y fotos en las populares plataformas de Giphy y Pixabay.
 
@@ -12,7 +12,7 @@ Esta es una aplicación web que te permite buscar y descargar GIFs y fotos de Gi
 
 - Paginación intuitiva: Explora fácilmente a través de los resultados de búsqueda con una paginación clara y botones de navegación.
 
-## Tecnologías Utilizadas
+## Tecnologías Utilizadas 🛠
 
 - HTML5
 - CSS3
@@ -23,14 +23,14 @@ Esta es una aplicación web que te permite buscar y descargar GIFs y fotos de Gi
 
 
 
-## Uso
+## Uso 📺
 
 1. Ingresa una palabra clave en el campo de búsqueda.
 2. Haz clic en el botón "Buscar" para buscar GIFs y fotos relacionados.
 3. Explora los resultados de búsqueda y haz clic en un GIF o foto para verlo en tamaño completo.
 4. Para descargar un GIF, haz clic en el botón "Descargar GIF". Para las fotos, utiliza el enlace de descarga proporcionado.
 
-## Contribución
+## Contribución 🎁
 
 Si deseas contribuir a este proyecto, sigue estos pasos:
 
@@ -40,12 +40,9 @@ Si deseas contribuir a este proyecto, sigue estos pasos:
 4. Empuja tus cambios a la rama: `git push origin feature/nombre-de-la-funcion`.
 5. Crea un pull request en el repositorio original.
 
-## Licencia
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para obtener más detalles.
 
----
 
-Hecho con ❤️ por [Tu Nombre]
+Hecho con ❤️ por Antonio 
 
 
