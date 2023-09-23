@@ -1,42 +1,39 @@
-# Hello World with React boilerplate
+# Gif & Photo Search App
 
-Start coding a react application
+![Gif & Photo Search App Screenshot](https://i.imgur.com/ICiuqjk.png)
 
-> If you are working locally instead of using codespaces or gitpod, please follow [local installation steps](#local-installation-skip-if-you-are-working-on-codespaces-or-gitpod) and come back to this part of the readme.
+Esta es una aplicación web que te permite buscar y descargar GIFs y fotos de Giphy y Pixabay. Con esta aplicación, puedes explorar una amplia variedad de contenido visual, guardar tus GIFs y fotos favoritos, y compartirlos en tus redes sociales. ¡Disfruta de la diversión de la búsqueda y la descarga de contenido visual! 😺
 
-## How to start coding?
+## Características 🎈
 
-- Install the packages with `$ npm install`.
-- Run the webpack server with `$ npm run start`
+- Búsqueda de GIFs y fotos: Utiliza palabras clave para buscar GIFs y fotos en las populares plataformas de Giphy y Pixabay.
 
-You can update the `styles/index.css` or `js/index.js` depending on your needs.
-Add more files into your, `./src/js/components` or styles folder as you need them.
+- Descarga de GIFs y fotos: Descarga tus GIFs y fotos favoritos para guardarlos en tu dispositivo y compartirlos más tarde.
 
-## Local Installation (skip if you are working on codespaces or gitpod)
+- Paginación intuitiva: Explora fácilmente a través de los resultados de búsqueda con una paginación clara y botones de navegación.
 
-Download the boilerplate using git
+## Tecnologías Utilizadas 🛠
 
-```
-$ git clone https://github.com/4GeeksAcademy/react-hello.git
-$ cd react-hello
-```
+- HTML5
+- CSS3
+- JavaScript
+- ReactJS
+- API de Giphy
+- API de Pixabay
 
-## Publish your website!
+## Uso 📺
 
-This boilerplate is 100% compatible with the free [github pages](https://pages.github.com/) and [vercel](https://vercel.com/) hosting.
+1. Ingresa una palabra clave en el campo de búsqueda.
+2. Haz clic en el botón "Buscar" para buscar GIFs y fotos relacionados.
+3. Explora los resultados de búsqueda y haz clic en un GIF o foto para verlo en tamaño completo.
+4. Para descargar un GIF, haz clic en el botón "Descargar GIF". Para las fotos, utiliza el enlace de descarga proporcionado.
 
-It takes just 2 minutes to deploy, [click here to start the process](https://github.com/4GeeksAcademy/react-hello/blob/master/docs/DEPLOY.md).
+## Contribución 🎁
 
-## Other features
+Si deseas contribuir a este proyecto, sigue estos pasos:
 
-- Automatic Code Formatting: Use of [Prettier](https://prettier.io/) for automatic code indentation and formatting.
-- Error reporting: Use of [eslint](https://eslint.org/) for better error reporting.
-- Hot Deploy: Use of [Webpack Development Server](https://webpack.js.org/configuration/dev-server/) for hot deploy and live reload.
-- One-command publish of the code to github pages with `npm run deploy:github`.
-- Babel 7 (really fast).
-
-### Contributors
-
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
-
-You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
+1. Realiza un fork del repositorio.
+2. Crea una rama para tu función: `git checkout -b feature/nombre-de-la-funcion`.
+3. Realiza tus cambios y haz commits: `git commit -m 'Añadida una nueva característica'`.
+4. Empuja tus cambios a la rama: `git push origin feature/nombre-de-la-funcion`.
+5. Crea un pull request en el repositorio original.
